@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,500;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  font-family: Montserrat;
+}
+
+:root {
+  --themeyellow: #f8d849;
+  --themewhite: #fff;
+  --themeblack: #000;
+  --lightgrey: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Adjust width as desired */
+}
+
+/* Scrollbar thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--themeyellow); /* Adjust color */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Adjust color */
+}
+
+.button, .section-four .container-fluid .section-4-right .section-4-btn, .section-three .container-bottom .bookBtn {
+  width: 319px;
+  height: 52px;
+  width: 319px;
+  height: 52px;
+  line-height: 52px;
+  background: var(--themeyellow);
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+#header {
+  min-height: 100vh;
+}
+#header .nav {
+  z-index: 5;
+}
+#header .nav .navbar-top {
+  padding: 12px 10px 12px 100px;
+}
+#header .nav .navbar-top .number1 span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+#header .nav .navbar-bottom {
+  padding: 20px 0px;
+  border-top: 1px solid var(--themewhite);
+}
+#header .nav .navbar-bottom .logo {
+  left: 100px;
+  top: 12px;
+}
+#header .nav .navbar-bottom .navbar-menu {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#header .nav .navbar-bottom .navbar-menu .top-design {
+  border-radius: 0px 0px 10px 10px;
+  background: #f8d849;
+  width: 56px;
+  height: 9px;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  transition: 0.3s;
+}
+#header .nav .navbar-bottom .navbar-menu li {
+  position: relative;
+}
+#header .nav .navbar-bottom .navbar-menu li a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+#header .nav .navbar-bottom .navbar-menu li:hover {
+  color: var(--themeyellow);
+}
+#header .nav .navbar-bottom .navbar-menu .nav-item-2:hover ~ .top-design {
+  transform: translateX(80px);
+  width: 90px;
+}
+#header .nav .navbar-bottom .navbar-menu .nav-item-3:hover ~ .top-design {
+  transform: translateX(180px);
+  width: 90px;
+}
+#header .nav .navbar-bottom .navbar-menu .nav-item-4:hover ~ .top-design {
+  transform: translateX(290px);
+  width: 110px;
+}
+#header .nav .navbar-bottom .navbar-menu .nav-item-5:hover ~ .top-design {
+  transform: translateX(420px);
+  width: 80px;
+}
+#header .nav .navbar-bottom .navbar-menu .nav-item-6:hover ~ .top-design {
+  transform: translateX(520px);
+  width: 80px;
+}
+#header .nav-phone {
+  z-index: 10;
+  transition: 0.3s;
+}
+#header .nav-phone .burger-menu .menu-line-one {
+  width: 35px;
+  height: 4px;
+  border-radius: 6px;
+  background: var(--themewhite);
+}
+#header .nav-phone .nav-phone-section {
+  min-height: 100vh;
+  left: 100%;
+  transition: 0.3s;
+}
+#header .nav-phone .nav-phone-section .closemenu {
+  top: 55px;
+  right: 15px;
+}
+#header .nav-phone .nav-phone-section .closemenu .close-line {
+  width: 35px;
+  height: 4px;
+  border-radius: 8px;
+  background: var(--themeblack);
+}
+#header .nav-phone .nav-phone-section .closemenu .one {
+  transform: rotate(45deg) translateX(0px);
+}
+#header .nav-phone .nav-phone-section .closemenu .two {
+  transform: rotate(-45deg) translateY(-4px) translateX(2px);
+}
+#header .nav-phone .nav-phone-section .navbar-menu li a {
+  font-size: 20px;
+}
+#header .nav-phone .nav-phone-section .navbar-menu li a:hover {
+  color: rgb(182, 139, 0) !important;
+}
+#header .nav-phone .phoneactive {
+  left: 0%;
+}
+#header #carouselExampleCaptions {
+  min-height: 100vh;
+}
+#header #carouselExampleCaptions .carousel-indicators button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 1;
+}
+#header #carouselExampleCaptions .carousel-indicators .active {
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--themeyellow);
+  position: relative;
+}
+#header #carouselExampleCaptions .carousel-indicators .active::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: var(--themeyellow);
+  border-radius: 50%;
+  top: 20%;
+  left: 20%;
+}
+#header #carouselExampleCaptions .carousel-inner {
+  min-height: 100vh;
+}
+#header #carouselExampleCaptions .carousel-inner .carousel-item {
+  position: absolute;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 94%), url(./Assets/heroBg1.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+#header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-item-details {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--themewhite);
+}
+#header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-item-details h5 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 6px;
+}
+#header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-item-details p {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 700;
+}
+#header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-item-details .carousel-item-btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 290px;
+  height: 52px;
+  border-radius: 5px;
+  background: #f8d849;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+  line-height: 52px;
+}
+#header #carouselExampleCaptions .carousel-control-prev,
+#header #carouselExampleCaptions .carousel-control-next {
+  width: 8%;
+  opacity: 1;
+}
+#header #carouselExampleCaptions .carousel-control-prev span,
+#header #carouselExampleCaptions .carousel-control-next span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--themewhite);
+}
+#header #carouselExampleCaptions .carousel-control-prev span:hover,
+#header #carouselExampleCaptions .carousel-control-next span:hover {
+  color: var(--themeyellow);
+}
+#header #carouselExampleCaptions .carousel-control-prev span:active,
+#header #carouselExampleCaptions .carousel-control-next span:active {
+  color: var(--themeyellow);
+}
+
+.demoCar {
+  margin: 100px 0px;
+}
+.demoCar > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 7px;
+  margin-bottom: 90px;
+}
+.demoCar .container {
+  overflow-x: scroll;
+}
+.demoCar .container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.demoCar .container .card-one {
+  min-width: 319px;
+}
+.demoCar .container .card-one .card-img {
+  width: 100%;
+  height: 341px;
+  border-radius: 20px;
+  border: 1px solid rgba(160, 160, 160, 0.69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demoCar .container .card-one .card-content {
+  font-family: Poppins;
+}
+.demoCar .container .card-one .card-content h4 {
+  margin: 14px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.demoCar .container .card-one .card-content ul li {
+  color: #a0a0a0;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+.demoCar .container .card-one .card-content .booknow {
+  height: 52px;
+  width: 100%;
+  border-radius: 5px;
+  background: #f8d849;
+  border: none;
+  outline: none;
+  line-height: 52px;
+}
+
+.section-three {
+  background: var(--lightgrey);
+}
+.section-three > h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 7.8px;
+}
+.section-three .container-top .top-img {
+  height: 391px;
+  background: url("./Assets/car5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-three .container-bottom img {
+  transform: translateY(-230px);
+}
+.section-four > h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 7.8px;
+}
+.section-four .container-fluid {
+  padding: 80px 0px;
+}
+.section-four .container-fluid .section-4-left {
+  height: 450px;
+  background: url("./Assets/car6.png");
+  background-repeat: no-repeat;
+}
+.section-four .container-fluid .section-4-right {
+  height: 450px;
+}
+.section-four .container-fluid .section-4-right .section-4-right-content > p {
+  color: #a0a0a0;
+  font-size: 10px;
+  font-weight: 700;
+}
+.section-four .container-fluid .section-4-right .section-4-right-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-four .container-fluid .section-4-right .section-4-right-content h4 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+.section-four .container-fluid .section-4-right .section-4-btn {
+  position: absolute;
+  left: 0.75rem;
+  right: auto;
+  bottom: 0;
+}
+
+.section-five {
+  background: var(--lightgrey);
+}
+.section-five .container .section-4-left {
+  background: url("./Assets/car7.png") !important;
+}
+
+.testmonial {
+  padding: 100px 0px;
+  background: #f5f5f5;
+}
+.testmonial .owl-carousel {
+  height: 100%;
+  width: 85%;
+  margin-left: auto;
+}
+.testmonial .owl-carousel .cloned {
+  opacity: 0.5;
+}
+.testmonial .owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 19%;
+  left: 40%;
+}
+.testmonial .owl-carousel .owl-nav button .owlNext,
+.testmonial .owl-carousel .owl-nav button .owlPrev {
+  width: 65px;
+  height: 65px;
+  border-radius: 36px;
+  border: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testmonial .owl-carousel .owl-nav button:hover {
+  background: transparent;
+}
+.testmonial .owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.testmonial .owl-carousel .owl-dots button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 1;
+  background: white;
+  margin: 0px 5px;
+}
+.testmonial .owl-carousel .owl-dots button span {
+  display: none;
+}
+.testmonial .owl-carousel .owl-dots button:hover {
+  background: white;
+}
+.testmonial .owl-carousel .owl-dots .active {
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--themeyellow);
+  position: relative;
+}
+.testmonial .owl-carousel .owl-dots .active::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: var(--themeyellow);
+  border-radius: 50%;
+  top: 20%;
+  left: 20%;
+}
+.testmonial .owl-carousel .item {
+  width: 100%;
+  overflow-y: auto;
+}
+.testmonial .owl-carousel .item .testimonial-card {
+  min-height: 400px;
+}
+.testmonial .owl-carousel .item .testimonial-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background: var(--themewhite);
+  z-index: -1;
+}
+.testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right {
+  padding: 0px 20px;
+}
+.testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right .card-right-header .name {
+  font-family: Helvetica Now Display;
+  font-size: 18px;
+  font-weight: 500;
+}
+.testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right .card-right-content .country {
+  font-family: Helvetica Now Display;
+  font-size: 12px;
+  font-weight: 500;
+}
+.testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right .card-right-content p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer {
+  background: #a0a0a0;
+}
+footer .footer-container .logofooter p {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: var(--themewhite);
+  padding: 12px 0px;
+}
+footer .footer-container .col-12 p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+footer .footer-container .col-12 ul li a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .section-three .container-bottom img {
+    transform: translateY(-180px);
+  }
+}
+@media (max-width: 992px) {
+  #header .nav .navbar-container {
+    width: 100% !important;
+  }
+  #header .nav .navbar-container .navbar-top {
+    padding: 12px 0px !important;
+  }
+  #header .nav .navbar-container .navbar-bottom .logo {
+    left: 0px !important;
+  }
+  #header .carousel .carousel-inner .carousel-item .carousel-item-details {
+    bottom: 5% !important;
+  }
+  .testmonial .owl-carousel {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #header .carousel .carousel-inner .carousel-item .carousel-item-details p {
+    font-size: 30px !important;
+  }
+  .section-three .container-bottom img {
+    transform: translateY(0px);
+  }
+  .section-four .container {
+    padding: 40px 0px !important;
+  }
+  .section-four .container .section-4-right {
+    height: auto !important;
+  }
+  .section-four .container .section-4-right .section-4-btn {
+    position: static !important;
+  }
+  .testmonial .owl-carousel {
+    width: 80%;
+    margin: auto;
+  }
+  .testmonial .owl-carousel .owl-nav {
+    position: absolute;
+    bottom: -14%;
+    left: 0%;
+  }
+  .testmonial .owl-carousel .owl-dots {
+    display: none;
+  }
+  .testmonial .owl-carousel .item .testimonial-card::after {
+    display: none;
+  }
+  .testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right {
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .button, .section-three .container-bottom .bookBtn, .section-four .container-fluid .section-4-right .section-4-btn {
+    width: 280px !important;
+  }
+  #header .carousel .carousel-inner .carousel-item {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 94%), url(./Assets/herobg2.png) no-repeat !important;
+    background-size: cover !important;
+  }
+  #header .carousel .carousel-inner .carousel-item .carousel-item-details {
+    bottom: -70px !important;
+  }
+  #header .carousel .carousel-inner .carousel-item .carousel-item-details h5 {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 4.2px !important;
+  }
+  #header .carousel .carousel-inner .carousel-item .carousel-item-details .carousel-item-btn {
+    margin-top: 80px;
+  }
+  .demoCar .container .card-one {
+    width: 300px !important;
+  }
+  .section-three .container-top .top-img {
+    background: url("./Assets/car5Phone.png") !important;
+    background-repeat: no-repeat !important;
+  }
+  .testmonial .owl-carousel {
+    width: 100%;
+  }
+  .testmonial .owl-carousel .owl-nav {
+    left: 20px;
+  }
+  .testmonial .owl-carousel .item .testimonial-card .testimonial-card-container .testimonial-card-right {
+    padding: 20px 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
